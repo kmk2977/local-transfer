@@ -1,0 +1,50 @@
+{
+  "name": "local_transfer",
+  "version": "1.0.0",
+  "description": "Local file transfer application for Mac and Mobile.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "gui": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.localtransfer.app",
+    "productName": "Local Transfer",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "files": [
+      "public/**/*",
+      "server.js",
+      "main.js",
+      "package.json",
+      "node_modules/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "Kshitij Kshirsagar",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "ip": "^2.0.1",
+    "multer": "^2.0.2",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "electron": "39.2.7",
+    "electron-builder": "^24.13.3"
+  }
+}
