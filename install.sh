@@ -2,7 +2,7 @@
 
 # --- CONFIGURATION ---
 # Replace this URL with your actual GitHub Release download link once you upload it
-DOWNLOAD_URL="YOUR_GITHUB_RELEASE_ZIP_URL"
+DOWNLOAD_URL="https://github.com/kmk2977/local-transfer/releases/download/v1.0.0/Local.Transfer-1.0.0-arm64-mac.zip"
 APP_NAME="Local Transfer"
 ZIP_NAME="Local-Transfer-mac.zip"
 
